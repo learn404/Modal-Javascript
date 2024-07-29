@@ -1,0 +1,39 @@
+/* Style général du modal */
+.modal {
+    display: none; /* Masquer le modal par défaut */
+    position: fixed; /* Rester en place */
+    z-index: 1; /* Assurer que le modal est au-dessus des autres éléments */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largeur complète */
+    height: 100%; /* Hauteur complète */
+    overflow: auto; /* Activer le défilement si nécessaire */
+    background-color: rgb(0, 0, 0); /* Couleur de fond */
+    background-color: rgba(0, 0, 0, 0.4); /* Couleur de fond avec opacité */
+}
+
+/* Style du contenu du modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% du haut et centré horizontalement */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largeur */
+    max-width: 500px; /* Largeur maximum */
+    border-radius: 10px;
+}
+
+/* Style du bouton de fermeture */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
